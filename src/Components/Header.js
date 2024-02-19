@@ -54,7 +54,7 @@ const Headers = () => {
                   </li>
                 </>
               ) : (
-                <li>
+                <li style={{ marginLeft: "10px" }}>
                   <NavLink to="/login">Login</NavLink>
                 </li>
               )}

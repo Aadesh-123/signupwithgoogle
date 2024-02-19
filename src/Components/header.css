@@ -1,12 +1,14 @@
+/* header.css */
+
+/* Default styles */
 header {
-  /* margin-top: -35px; */
   padding: 0;
   width: 100%;
   height: 80px;
   background: rgb(108, 108, 235);
 }
+
 header nav {
-  /* width: 1200px; */
   padding: 5px;
   margin: auto;
   display: flex;
@@ -20,10 +22,11 @@ header nav .left {
 
 header nav .right ul {
   display: flex;
-  width: 500px;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 header nav .right ul li {
@@ -36,4 +39,22 @@ header nav .right ul li {
 header nav .right ul li a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 0 10px;
+  }
+
+  header nav .left h1 {
+    font-size: 20px;
+  }
+
+  header nav .right ul {
+    width: auto;
+  }
+
+  header nav .right ul li {
+    font-size: 16px;
+  }
 }
